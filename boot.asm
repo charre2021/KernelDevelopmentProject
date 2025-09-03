@@ -1,3 +1,5 @@
+; comment for commit
+
 ORG 0
 BITS 16
 
