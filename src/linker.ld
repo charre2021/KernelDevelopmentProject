@@ -1,7 +1,8 @@
 ENTRY(_start)
 OUTPUT_FORMAT(binary)
+SECTIONS
 {
-    . = 1M
+    . = 1M;
     .text :
     {
         *(.text)
