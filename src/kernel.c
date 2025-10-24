@@ -13,7 +13,7 @@ uint16_t terminal_make_char(char c, char color)
 
 void terminal_putchar(int x, int y, char c, char color)
 {
-    video_mem[(y) + x] = terminal_make_char(c, color);
+    video_mem[(y * VGA_WIDTH) + x] = terminal_make_char(c, color);
 }
 
 void terminal_writechar(char c, char color)
